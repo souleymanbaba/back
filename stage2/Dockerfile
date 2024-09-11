@@ -6,7 +6,7 @@ WORKDIR /app
 # Copier le fichier JAR de l'application dans le répertoire de travail
 COPY ./target/stage-0.0.1-SNAPSHOT.jar app.jar
 
-EXPOSE 8080
+EXPOSE 8888
 
 # Définir l'entrée du conteneur pour exécuter l'application
 ENTRYPOINT ["java", "-jar", "app.jar"]
